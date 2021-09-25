@@ -440,7 +440,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("🔄 **Processing**")
+    lel = await message.reply("🔄 **ruko jara sabar karo😈**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -522,7 +522,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"😅 Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"ekdam bhaklol ho ka be 2-2ghanta ka video de rhe ho😅 Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
             )
         keyboard = InlineKeyboardMarkup(
             [
@@ -548,7 +548,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("🎵 **Processing**")
+        await lel.edit("🎵 **roko jara sabar karo 😈**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -588,7 +588,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("🎵 **Processing**")
+        await lel.edit("🎵 **ruko jara sabar karo🐷**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         
         try:
@@ -708,7 +708,7 @@ async def ytplay(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
         return
-    lel = await message.reply("🔄 **Processing**")
+    lel = await message.reply("🔄 **ruko jara sabar karo**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -771,7 +771,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("🎵 **Processing**")
+    await lel.edit("🎵 **ruko jara sabar karo 😈**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -851,7 +851,7 @@ async def deezer(client: Client, message_: Message):
     if message_.chat.id in DISABLED_GROUPS:
         return
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **ruko jara sabar karo 😈**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -928,7 +928,7 @@ async def deezer(client: Client, message_: Message):
     try:    
         duuration= round(duration / 60)
         if duuration > DURATION_LIMIT:
-            await cb.message.edit(f"Music longer than {DURATION_LIMIT}min are not allowed to play")
+            await cb.message.edit(f"areee bhaklol sun Music longer than {DURATION_LIMIT}min are not allowed to play")
             return
     except:
         pass    
