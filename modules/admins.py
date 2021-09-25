@@ -21,7 +21,7 @@ async def update_admin(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("❇️ Admin cache refreshed!")
+    await message.reply_text("❇️ lo beta kar diya refresh !")
 
 
 @Client.on_message(command("pause") & other_filters)
@@ -32,10 +32,10 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("❗ Nothing is playing!")
+        await message.reply_text("Abe kuch play nahi ho rha!")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
-        await message.reply_text("SUCCESSFULLY PAUSED ")
+        await message.reply_text("lo beta kar diya pause ")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -49,7 +49,7 @@ async def resume(_, message: Message):
         await message.reply_text("abe kuch pause nahi hai ")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
-        await message.reply_text("⏸ Successfully Resumed!")
+        await message.reply_text("⏸ lo beta kar diya Resumed!")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -58,7 +58,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗NOTHING IS STREAMING HERE")
+        await message.reply_text("❗Abe kuch play nahi ho rha ")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -66,7 +66,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("❌ END")
+        await message.reply_text("❌aree yaar end kyu kiya 😭...thik hai beta kar diya stop")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -76,7 +76,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ STOP STREAMING!")
+        await message.reply_text("❗ lo beta kar diya stop")
     else:
         callsmusic.queues.task_done(chat_id)
 
