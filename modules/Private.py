@@ -7,11 +7,11 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_photo("https://telegra.ph/file/5993e1a643d3986a27d9e.jpg")
+    await message.reply_photo("https://telegra.ph/file/cd1c80751b6c75a655b1d.jpg")
     await message.reply_text(
-        f"""**Hey, I'm AXEL 😊🎵
+        f"""**Hey, I'm music bot by Aditya 😊🎵
 
-I can play ꬺᶙȿᶖɕ  in your group's voice CHAT Developed by [Axel](https://t.me/suraj_o_p)
+I can play ꬺᶙȿᶖɕ  in your group's voice CHAT Developed by [Aditya](https://t.me/aboutmeaditya)
 
 Add me to your group and play music freely😆!**
         """,
@@ -19,14 +19,14 @@ Add me to your group and play music freely😆!**
             [
                 [
                     InlineKeyboardButton(
-                        "Oᴡɴᴇʀ", url="https://t.me/suraj_o_p")
+                        "Oᴡɴᴇʀ", url="https://t.me/aboutmeaditya")
                   ],[
                     InlineKeyboardButton(
-                        "🛡 SUPPORT GROUP 🛡", url="https://t.me/AXEL_SUPPORT"
+                        "🛡 SUPPORT GROUP 🛡", url="https://t.me/quicktrivia"
                     ),
                 ],[ 
                     InlineKeyboardButton(
-                        "ADD ME TO YOUR GROUP😉", url="https://t.me/AXEL_MUSICBOT?startgroup=true"
+                        "ADD ME TO YOUR GROUP😉", url="https://t.me/v4music_bot?startgroup=true"
                     )]
             ]
         ),
@@ -35,7 +35,7 @@ Add me to your group and play music freely😆!**
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**AXELMUSIC BOT IS WORKING**""",
+      await message.reply_text("""**quick trivia music BOT IS WORKING**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
