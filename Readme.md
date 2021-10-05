@@ -7,7 +7,7 @@
 # quicktriviav4👮
 💡 This is Innexia An Advanced Telegram CHAT Bot For Best AI Experience made by AXEL!! 🤖 
 
-![logo] (https://https://telegra.ph/file/63667b69b432653bd1683.jpg)
+![logo](https://https://telegra.ph/file/63667b69b432653bd1683.jpg)
 #  💡Dᴇᴠᴇʟᴏᴩᴇᴍᴇɴᴛ•Sᴜᴩᴩᴏʀᴛ👥[Here !](https://t.me/AXEL_SUPPORT)
 
 ## Me On Telegram As [💥 AXEL 💥](https://t.me/SURAJ_O_P)
