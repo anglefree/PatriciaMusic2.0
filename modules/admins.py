@@ -35,7 +35,7 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Nothing is playing!")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
-        await message.reply_text("lo beta kar diya PAUSE")
+        await message.reply_text("SUCCESSFULLY PAUSED ")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -49,7 +49,7 @@ async def resume(_, message: Message):
         await message.reply_text("abe kuch pause nahi hai ")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
-        await message.reply_text("⏸ lo beta kar diya Resumed!")
+        await message.reply_text("⏸ Successfully Resumed!")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -58,7 +58,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ abe sun kuch nahi play ho rha toa stop kya karu")
+        await message.reply_text("❗NOTHING IS STREAMING HERE")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -66,7 +66,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("❌ ok stop kar diya lakin beta mere se panga leke thik nahi kiya tune")
+        await message.reply_text("❌ END")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -76,7 +76,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ abe sun kuch play nahi ho rha VC mai toa skip kya karu!")
+        await message.reply_text("❗ STOP STREAMING!")
     else:
         callsmusic.queues.task_done(chat_id)
 
@@ -105,4 +105,4 @@ async def admincache(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("❇️ chal beta kar diya reload admin list ko")
+    await message.reply_text("❇️ RELOADED✅")

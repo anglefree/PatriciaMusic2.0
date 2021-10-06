@@ -5,16 +5,16 @@
 
 
 # quicktriviav4👮
-💡 This is Innexia An Advanced Telegram CHAT Bot For Best AI Experience made by aditya !! 🤖 
+💡 This is Innexia An Advanced Telegram CHAT Bot For Best AI Experience made by AXEL!! 🤖 
 
-![logo](https://telegra.ph/file/a2bf8c1ae3e2c247a23fa.jpg)
-#  💡Dᴇᴠᴇʟᴏᴩᴇᴍᴇɴᴛ•Sᴜᴩᴩᴏʀᴛ👥[Here !](https://t.me/v4updatesdiscussion)
+![logo](https://https://telegra.ph/file/63667b69b432653bd1683.jpg)
+#  💡Dᴇᴠᴇʟᴏᴩᴇᴍᴇɴᴛ•Sᴜᴩᴩᴏʀᴛ👥[Here !](https://t.me/AXEL_SUPPORT)
 
-## Me On Telegram As [💥 aditya 💥](https://t.me/aboutmeaditya)
+## Me On Telegram As [💥 AXEL 💥](https://t.me/SURAJ_O_P)
 
 ## Cᴏᴍᴍᴀɴᴅs
 ```
-->Music•Player<- by aditya
+->Music•Player<- by AXEL
 =>> *Song Playing* 🎧 
 ❍ /play  - play song you requested
 ❍ /dplay  - play song you requested via deezer
@@ -43,6 +43,6 @@
 
 ## DEPLOY ON HEROKU 🚀
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/anglefree/quicktriviav4"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/SURAJOP7/quicktriviav4"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
  
 
